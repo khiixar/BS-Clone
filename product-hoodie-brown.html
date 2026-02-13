@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EXTRA HEAVY STANDARD BOXY HOODIE (BROWN) | BlankSaga</title>
+    <title>THE COZY HOODIE (BROWN) | BlankSaga</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -41,15 +41,15 @@
     <main>
         <div class="product-detail">
             <div class="product-detail-image">
-                <img src="images/hoodie-brown.jpg" alt="EXTRA HEAVY STANDARD BOXY HOODIE (BROWN)">
+                <img src="images/hoodie-brown.jpg" alt="THE COZY HOODIE (BROWN)">
             </div>
             <div class="product-detail-info">
-                <h1>EXTRA HEAVY STANDARD BOXY HOODIE (BROWN)</h1>
-                <p class="price">$44.99</p>
+                <h1>THE COZY HOODIE (BROWN)</h1>
+                <p class="price">$29.99</p>
 
                 <p style="color: red; font-weight: bold;">SOLD OUT</p>
 
-                <p>Premium heavyweight construction for lasting quality. This boxy hoodie features our heaviest fleece blend, designed to withstand the test of time while providing unmatched comfort.</p>
+                <p>Master the Relaxed Silhouette. Designed for those who prioritize freedom of movement and a modern aesthetic. The ultimate everyday hoodie in rich brown.</p>
 
                 <div class="size-selector">
                     <label>Select Size:</label>
@@ -60,6 +60,12 @@
                         <div class="size-option" onclick="selectSize(this)">XL</div>
                         <div class="size-option" onclick="selectSize(this)">XXL</div>
                     </div>
+                </div>
+
+                <div style="margin-top: 30px;">
+                    <button class="btn btn-outline" onclick="toggleSizeChart()" style="width: 100%;">
+                        View Size Chart
+                    </button>
                 </div>
 
                 <button class="btn" style="width: 100%; margin-top: 20px;" disabled>
@@ -79,6 +85,88 @@
             </div>
         </div>
     </main>
+
+    <div id="sizeChartModal" class="size-chart-modal">
+        <div class="size-chart-content">
+            <span class="size-chart-close" onclick="toggleSizeChart()">&times;</span>
+            
+            <div style="text-align: center; margin-bottom: 48px;">
+                <div style="font-size: 11px; letter-spacing: 4px; text-transform: uppercase; color: #8B7355; margin-bottom: 12px;">
+                    Find Your Perfect Fit
+                </div>
+                <h2 style="font-size: 36px; font-weight: 300; margin: 0 0 16px 0; letter-spacing: 1px;">
+                    Size Guide
+                </h2>
+                <div style="width: 60px; height: 1px; background: linear-gradient(90deg, transparent, #B8A68F, transparent); margin: 0 auto;"></div>
+            </div>
+
+            <div style="display: flex; justify-content: center; margin-bottom: 40px;">
+                <div style="display: inline-flex; background: #FFF; border-radius: 30px; padding: 4px; box-shadow: 0 2px 8px rgba(0,0,0,0.06); border: 1px solid #ddd;">
+                    <button class="unit-toggle active" data-unit="in" onclick="switchUnit('in')" style="padding: 10px 28px; border: none; border-radius: 26px; cursor: pointer; font-size: 13px; letter-spacing: 1px; text-transform: uppercase; background: #000; color: #FFF;">
+                        Inches
+                    </button>
+                    <button class="unit-toggle" data-unit="cm" onclick="switchUnit('cm')" style="padding: 10px 28px; border: none; border-radius: 26px; cursor: pointer; font-size: 13px; letter-spacing: 1px; text-transform: uppercase; background: transparent; color: #8B7355;">
+                        Centimeters
+                    </button>
+                </div>
+            </div>
+
+            <div style="background: #FFF; border-radius: 16px; padding: 32px; margin-bottom: 40px; box-shadow: 0 4px 24px rgba(0,0,0,0.06); border: 1px solid #ddd;">
+                <h3 style="font-size: 18px; font-weight: 500; margin-bottom: 24px; text-align: center;">
+                    <span style="color: #8B7355; margin-right: 8px;">✦</span>
+                    Enter Your Measurements
+                    <span style="color: #8B7355; margin-left: 8px;">✦</span>
+                </h3>
+                
+                <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; margin-bottom: 24px;">
+                    <div style="text-align: center;">
+                        <label style="display: block; font-size: 11px; letter-spacing: 2px; text-transform: uppercase; color: #8B7355; margin-bottom: 8px;">Bust</label>
+                        <input type="number" id="bustInput" placeholder="0.0" style="width: 100%; padding: 14px 16px; border: 1px solid #ddd; border-radius: 8px; font-size: 18px; text-align: center; background: #FDFBF7;">
+                        <span class="unit-label" style="font-size: 12px; color: #A69783; margin-top: 4px; display: block;">in</span>
+                    </div>
+                    <div style="text-align: center;">
+                        <label style="display: block; font-size: 11px; letter-spacing: 2px; text-transform: uppercase; color: #8B7355; margin-bottom: 8px;">Waist</label>
+                        <input type="number" id="waistInput" placeholder="0.0" style="width: 100%; padding: 14px 16px; border: 1px solid #ddd; border-radius: 8px; font-size: 18px; text-align: center; background: #FDFBF7;">
+                        <span class="unit-label" style="font-size: 12px; color: #A69783; margin-top: 4px; display: block;">in</span>
+                    </div>
+                    <div style="text-align: center;">
+                        <label style="display: block; font-size: 11px; letter-spacing: 2px; text-transform: uppercase; color: #8B7355; margin-bottom: 8px;">Hips</label>
+                        <input type="number" id="hipsInput" placeholder="0.0" style="width: 100%; padding: 14px 16px; border: 1px solid #ddd; border-radius: 8px; font-size: 18px; text-align: center; background: #FDFBF7;">
+                        <span class="unit-label" style="font-size: 12px; color: #A69783; margin-top: 4px; display: block;">in</span>
+                    </div>
+                </div>
+
+                <button onclick="findSize()" style="width: 100%; padding: 16px 32px; background: #000; color: #FFF; border: none; border-radius: 8px; font-size: 13px; letter-spacing: 2px; text-transform: uppercase; cursor: pointer;">
+                    Find My Size
+                </button>
+
+                <div id="recommendedSize" style="display: none; margin-top: 24px; padding: 20px; background: rgba(139, 115, 85, 0.1); border-radius: 12px; text-align: center; border: 1px solid rgba(139, 115, 85, 0.2);">
+                    <div style="font-size: 12px; letter-spacing: 2px; text-transform: uppercase; color: #8B7355; margin-bottom: 8px;">
+                        Your Recommended Size
+                    </div>
+                    <div id="recommendedSizeValue" style="font-size: 36px; font-weight: 500; color: #000;">
+                    </div>
+                </div>
+            </div>
+
+            <div style="background: #FFF; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 24px rgba(0,0,0,0.06); border: 1px solid #ddd;">
+                <table id="sizeTable" style="width: 100%; border-collapse: collapse; font-size: 15px;">
+                    <thead>
+                        <tr style="background: linear-gradient(180deg, #F8F4EC 0%, #F3EEE4 100%); border-bottom: 1px solid #ddd;">
+                            <th style="padding: 20px 16px; text-align: left; font-weight: 500; font-size: 11px; letter-spacing: 2px; text-transform: uppercase; color: #8B7355;">Size</th>
+                            <th style="padding: 20px 16px; text-align: center; font-weight: 500; font-size: 11px; letter-spacing: 2px; text-transform: uppercase; color: #8B7355;">Bust</th>
+                            <th style="padding: 20px 16px; text-align: center; font-weight: 500; font-size: 11px; letter-spacing: 2px; text-transform: uppercase; color: #8B7355;">Waist</th>
+                            <th style="padding: 20px 16px; text-align: center; font-weight: 500; font-size: 11px; letter-spacing: 2px; text-transform: uppercase; color: #8B7355;">Hips</th>
+                            <th style="padding: 20px 16px; text-align: center; font-weight: 500; font-size: 11px; letter-spacing: 2px; text-transform: uppercase; color: #8B7355;">Shoulders</th>
+                            <th style="padding: 20px 16px; text-align: center; font-weight: 500; font-size: 11px; letter-spacing: 2px; text-transform: uppercase; color: #8B7355;">Length</th>
+                        </tr>
+                    </thead>
+                    <tbody id="sizeTableBody">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
 
     <footer>
         <div class="footer-grid">
