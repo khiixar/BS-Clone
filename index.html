@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BlankSaga | Where Luxury Meets Style</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Age Gate -->
+    <div id="age-gate">
+        <div class="age-gate-content">
+            <h2>CONFIRM YOUR AGE</h2>
+            <p>Are you 18 years old or older?</p>
+            <button class="btn" onclick="closeAgeGate()">YES, I AM</button>
+            <button class="btn btn-outline" onclick="rejectAge()">NO, I'M NOT</button>
+        </div>
+    </div>
+
+    <div class="announcement-bar">
+        FREE SHIPPING FOR ALL U.S. ORDERS OVER $50.
+    </div>
+
+    <header>
+        <a href="index.html" class="logo">BLANKSAGA</a>
+        <div class="nav-main">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li class="dropdown">
+                        <a href="#">BlankSaga Brand</a>
+                        <div class="dropdown-content">
+                            <a href="about.html">About Us</a>
+                            <a href="faq.html">FAQ</a>
+                        </div>
+                    </li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="reviews.html">Review</a></li>
+                </ul>
+            </nav>
+            <div class="header-icons">
+                <a href="#">Account</a>
+                <a href="#">Wishlist</a>
+                <a href="#">Cart (0)</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <h1>WINTER SPRING '26</h1>
+            <a href="shop.html" class="btn">Shop Now</a>
+        </section>
+
+        <!-- Featured Products -->
+        <h2 class="section-title">Featured Products</h2>
+        <div class="product-grid">
+            
+            <a href="product-sweatpant-grey.html" class="product-card">
+                <div class="product-image">
+                    <span class="sold-out-badge">Sold Out</span>
+                    <img src="images/sweatpant-grey.jpg" alt="THE COZY SWEATPANT (GREY METALLIC)">
+                </div>
+                <h3>THE COZY SWEATPANT (GREY METALLIC)</h3>
+                <p class="price">$29.99</p>
+                <p class="product-description">Master the Relaxed Silhouette. Designed for those who prioritize freedom of movement and a modern ae...</p>
+            </a>
+            
+            <a href="product-sweatpant-black.html" class="product-card">
+                <div class="product-image">
+                    <span class="sold-out-badge">Sold Out</span>
+                    <img src="images/sweatpant-black.jpg" alt="THE COZY SWEATPANT (BLACK)">
+                </div>
+                <h3>THE COZY SWEATPANT (BLACK)</h3>
+                <p class="price">$29.99</p>
+                <p class="product-description">Master the Relaxed Silhouette. Designed for those who prioritize freedom of movement and a modern ae...</p>
+            </a>
+            
+            <a href="product-sweatpant-brown.html" class="product-card">
+                <div class="product-image">
+                    <span class="sold-out-badge">Sold Out</span>
+                    <img src="images/sweatpant-brown.jpg" alt="EXTRA HEAVY BAGGY SWEATS (BROWN)">
+                </div>
+                <h3>EXTRA HEAVY BAGGY SWEATS (BROWN)</h3>
+                <p class="price">$39.99</p>
+                <p class="product-description">Engineered for Longevity. This is the heaviest sweatpant in our lineup. At a massive 550+ GSM, these...</p>
+            </a>
+            
+            <a href="product-hoodie-grey.html" class="product-card">
+                <div class="product-image">
+                    <span class="sold-out-badge">Sold Out</span>
+                    <img src="images/hoodie-grey.jpg" alt="THE COZY HOODIE (GREY METALLIC)">
+                </div>
+                <h3>THE COZY HOODIE (GREY METALLIC)</h3>
+                <p class="price">$29.99</p>
+                <p class="product-description">Master the Relaxed Silhouette. Designed for those who prioritize freedom of movement and a modern ae...</p>
+            </a>
+            
+            <a href="product-tee-white.html" class="product-card">
+                <div class="product-image">
+                    <span class="sold-out-badge">Sold Out</span>
+                    <img src="images/tee-white.jpg" alt="CORE OVERSIZED BOXY HEAVY COTTON TEE - WHITE">
+                </div>
+                <h3>CORE OVERSIZED BOXY HEAVY COTTON TEE - WHITE</h3>
+                <p class="price">$14.99</p>
+                <p class="product-description">The Foundation of Your Wardrobe. This isn't just a t-shirt; it's a structural essential. Crafted fro...</p>
+            </a>
+            
+            <a href="product-hoodie-black.html" class="product-card">
+                <div class="product-image">
+                    <span class="sold-out-badge">Sold Out</span>
+                    <img src="images/hoodie-black.jpg" alt="THE COZY HOODIE (BLACK)">
+                </div>
+                <h3>THE COZY HOODIE (BLACK)</h3>
+                <p class="price">$29.99</p>
+                <p class="product-description">Master the Relaxed Silhouette. Designed for those who prioritize freedom of movement and a modern ae...</p>
+            </a>
+        </div>
+
+        <!-- Explore Section -->
+        <section class="explore-section">
+            <h2 class="section-title">Explore</h2>
+            <div class="explore-grid">
+                <div class="explore-card" onclick="window.location.href='shop.html'">Tops</div>
+                <div class="explore-card" onclick="window.location.href='shop.html'">Bottoms</div>
+                <div class="explore-card" onclick="window.location.href='shop.html'">All Products</div>
+            </div>
+        </section>
+
+        <!-- Luxury Section -->
+        <section class="luxury-section">
+            <h2>WHERE LUXURY<br>MEETS STYLE</h2>
+        </section>
+
+        <!-- Reviews Section -->
+        <section class="reviews-section">
+            <h2 class="section-title">Let Customers Speak For Us</h2>
+            <div class="reviews-grid">
+                <div class="review-card">
+                    <div class="review-stars">★★★★★</div>
+                    <p class="review-text">I saw the product and looked at the quality and the processing and everything was quick and pretty successful and incredible fast shipping.</p>
+                    <p class="review-author">Shamsun Nahar</p>
+                    <p class="review-date">01/24/2026</p>
+                </div>
+                <div class="review-card">
+                    <div class="review-stars">★★★★★</div>
+                    <p class="review-text">I love the fabric, and the quality of the clothes is very high material and it also fit very good on me.</p>
+                    <p class="review-author">Anonymous</p>
+                    <p class="review-date">01/24/2026</p>
+                </div>
+                <div class="review-card">
+                    <div class="review-stars">★★★★★</div>
+                    <p class="review-text">Very comfortable and soft. Good fitting as well.</p>
+                    <p class="review-author">Anonymous</p>
+                    <p class="review-date">01/22/2026</p>
+                </div>
+                <div class="review-card">
+                    <div class="review-stars">★★★★★</div>
+                    <p class="review-text">Super comfortable, it's like wearing a cloud. Great fit, nice materials. Best blank on the market.</p>
+                    <p class="review-author">Yusuf A</p>
+                    <p class="review-date">01/02/2026</p>
+                </div>
+                <div class="review-card">
+                    <div class="review-stars">★★★★★</div>
+                    <p class="review-text">If I could leave 6 stars I would, quality is immaculate, fit and finish is exactly what you want in a hoodie.</p>
+                    <p class="review-author">Yusuf A</p>
+                    <p class="review-date">01/02/2026</p>
+                </div>
+                <div class="review-card">
+                    <div class="review-stars">★★★★★</div>
+                    <p class="review-text">Great oversized fit. Perfect for the gym and those who workout.</p>
+                    <p class="review-author">Ahmed Mian</p>
+                    <p class="review-date">01/02/2026</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section class="features-section">
+            <div class="feature-card">
+                <h3>Fast Global Delivery</h3>
+                <p>Reliable worldwide shipping with trusted carriers</p>
+            </div>
+            <div class="feature-card">
+                <h3>Secure Payments</h3>
+                <p>All transactions are safely processed with encrypted checkout.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Crafted with Precision</h3>
+                <p>Every product is built with attention to detail using top-grade materials.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Customer Support</h3>
+                <p>Our support team is always ready to help you with any questions.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h4>Service</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="about.html">BlankSaga Brand</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="reviews.html">Review</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Policy Pages</h4>
+                <ul>
+                    <li><a href="#">Wholesale</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Refund Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="contact.html">Contact Information</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Subscribe</h4>
+                <p style="font-size: 11px; color: var(--light-gray); margin-bottom: 15px;">Enter your email below to be the first to know about new collections and product launches.</p>
+                <input type="email" placeholder="Enter your email">
+                <button class="btn">Join</button>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="payment-icons">
+                <span>Amex</span>
+                <span>Apple Pay</span>
+                <span>Discover</span>
+                <span>Google Pay</span>
+                <span>Mastercard</span>
+                <span>PayPal</span>
+                <span>Visa</span>
+            </div>
+            <p style="margin-top: 20px;">© blanksaga</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
