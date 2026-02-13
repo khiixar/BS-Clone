@@ -535,36 +535,6 @@ footer {
     text-transform: uppercase;
 }
 
-/* Age Gate Modal */
-#age-gate {
-    position: fixed;
-    inset: 0;
-    background: rgba(255, 255, 255, 0.98);
-    z-index: 10000;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-}
-
-.age-gate-content {
-    max-width: 450px;
-    padding: 40px;
-}
-
-.age-gate-content h2 {
-    font-size: 24px;
-    letter-spacing: 3px;
-    margin-bottom: 20px;
-    font-weight: 600;
-}
-
-.age-gate-content p {
-    margin-bottom: 30px;
-    font-size: 14px;
-    color: var(--dark-gray);
-}
-
 /* Contact Form */
 .contact-form {
     max-width: 600px;
